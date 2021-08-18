@@ -1,7 +1,11 @@
 export default {
   head() {
+    console.log(this.$foo)
     return this.$nuxtI18nHead({ addSeoAttributes: true })
   },
+  plugins: [
+    '~/plugins/test.js',
+  ],
   modules: [
     ['@nuxtjs/i18n', {
       langDir: 'i18n/',

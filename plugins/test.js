@@ -1,0 +1,1 @@
+export default (context, inject) => inject('foo', { bar: 'baz' })

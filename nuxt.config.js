@@ -1,6 +1,7 @@
 export default {
   head() {
     console.log(this.$foo)
+    console.log(this.context)
     return this.$nuxtI18nHead({ addSeoAttributes: true })
   },
   plugins: [
